@@ -15,7 +15,7 @@ class ProductsTableSeeder extends Seeder {
     \DB::table('products')->insert(array (
       0 => array (
         'id' => 1,
-        'slug' => 'CK-Blue-Schoolboy-Blazer',
+        'slug' => 'CK-Blue-Schoolboy-Blazer'.rand(),
         'name' => 'CK Blue Schoolboy Blazer',
         'description' => '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>',
         'a_img' => 'ed60e-mpd000c.jpg',
@@ -27,7 +27,7 @@ class ProductsTableSeeder extends Seeder {
       ),
       1 => array (
         'id' => 2,
-        'slug' => 'Dior-Blue-Peacoat-Trench',
+        'slug' => 'Dior-Blue-Peacoat-Trench'.rand(),
         'name' => 'Dior Blue Peacoat Trench',
         'description' => '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>',
         'a_img' => '0c88d-mtk009a.jpg',
@@ -39,7 +39,7 @@ class ProductsTableSeeder extends Seeder {
       ),
       2 => array (
         'id' => 3,
-        'slug' => 'Fendi-Waxed-Blue-Jacket',
+        'slug' => 'Fendi-Waxed-Blue-Jacket'.rand(),
         'name' => 'Fendi Waxed Blue Jacket',
         'description' => '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>',
         'a_img' => '51c1b-pmo000a.jpg',
@@ -51,7 +51,7 @@ class ProductsTableSeeder extends Seeder {
       ),
       3 => array (
         'id' => 4,
-        'slug' => 'Gucci-Red-Neck-Sweater',
+        'slug' => 'Gucci-Red-Neck-Sweater'.rand(),
         'name' => 'Gucci Red Neck Sweater',
         'description' => '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>',
         'a_img' => '8d383-mtk006a.jpg',
@@ -63,7 +63,7 @@ class ProductsTableSeeder extends Seeder {
       ),
       4 => array (
         'id' => 5,
-        'slug' => 'Pepe-Jeans-Outwear-Jeans',
+        'slug' => 'Pepe-Jeans-Outwear-Jeans'.rand(),
         'name' => 'Pepe Jeans Outwear Jeans',
         'description' => '<p><span style="color: rgb(102, 102, 102); font-family: Verdana, Geneva, sans-serif; font-size: 10px;">Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</span></p>',
         'a_img' => 'f0a95-mpd000a.jpg',

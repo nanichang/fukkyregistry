@@ -22,11 +22,10 @@ Route::group(['prefix' => 'auth'], function() {
 
 Route::group(['prefix' => 'dashboard'], function() {
   // Route::get('/', 'DashboardController@index')->name('dashboard.index');
-  Route::get('/wishlist/{id}', function() {
-    return "added";
-  })->name('wishlist.add');
+  Route::get('/wishlist', 'WishlistController@index')->name('wishlist.index');
 });
 
 Route::group(['prefix' => 'shop'], function() {
   Route::get('/', 'ShopController@index')->name('shop.index');
+  Route::get('/wishlist/{slug}', 'WishlistController@store')->name('wishlist.store');
 });

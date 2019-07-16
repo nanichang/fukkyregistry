@@ -169,7 +169,7 @@
                           <div class="product_hover">
                             <div class="product_action">
                               <a href="#" title="Add To Cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                              <a href="#" title="Wishlist"><i class="zmdi zmdi-favorite-outline"></i></a>
+                              <a href="{{ route('wishlist.store', $product->slug) }}" title="Add To Wishlist"><i class="zmdi zmdi-favorite-outline"></i></a>
                               <a href="#" title="Compare"><i class="zmdi zmdi-refresh-alt"></i></a>
                             </div>
                             <div class="product__desc">
