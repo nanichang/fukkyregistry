@@ -11,6 +11,22 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'HomeController@index')->name('home.index');
+
+Route::group(['prefix' => 'auth'], function() {
+  Route::get('/login', 'LoginController@getLogin')->name('auth.login');
+  Route::post('/login', 'LoginController@post')->name('auth.post.login');
+  Route::get('/register', 'RegisterController@register')->name('auth.register');
+  Route::post('/register', 'RegisterController@store')->name('auth.post.register');
+});
+
+Route::group(['prefix' => 'dashboard'], function() {
+  // Route::get('/', 'DashboardController@index')->name('dashboard.index');
+  Route::get('/wishlist/{id}', function() {
+    return "added";
+  })->name('wishlist.add');
+});
+
+Route::group(['prefix' => 'shop'], function() {
+  Route::get('/', 'ShopController@index')->name('shop.index');
 });
