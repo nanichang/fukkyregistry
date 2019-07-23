@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Product extends Model {
   use SoftDeletes;
-  protected $fillable = ['sku', 'name', 'slug', 'description', 'cover', 'quantity', 'price', 'status'];
+  protected $fillable = ['sku', 'name', 'slug', 'description', 'cover', 'quantity', 'price', 'status', 'category_id'];
   protected $dates = ['deleted_at'];
   public $primarykey = 'id';
 

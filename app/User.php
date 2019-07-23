@@ -36,7 +36,7 @@ class User extends Authenticatable {
 		'email_verified_at' => 'datetime',
 	];
 
-	public function wishlist() {
+	public function wishlists() {
 		return $this->hasMany('App\Wishlist');
 	}
 }

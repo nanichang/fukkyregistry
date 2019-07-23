@@ -25,8 +25,8 @@ class CreateProductsTable extends Migration {
 			$table->decimal('current_price');
 			$table->decimal('discount_price')->nullable();
 			$table->integer('status')->default(0);
-			$table->integer('category_id');
-			// $table->foreign('category_id')->references('id')->on('categories');
+			$table->bigInteger('category_id')->unsigned();
+			$table->foreign('category_id')->references('id')->on('categories');
 			$table->softDeletes();
 			$table->timestamps();
 		});

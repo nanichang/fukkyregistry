@@ -24,9 +24,9 @@ class ProductController extends Controller {
         //
     }
     
-    public function show($id)
+    public function show($slug)
     {
-        //
+        dd($slug);
     }
     
     public function edit($id)

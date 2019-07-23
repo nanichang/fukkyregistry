@@ -116,16 +116,16 @@
                       <div class="col-lg-3 col-md-4" style="margin-bottom: 25px;">
                         <div class="single__product">
                           <div class="produc_thumb">
-                            <a href="product-details.html"><img src="assets/img/product/1.png" alt=""></a>
+                            <a href="{{ route('product.show', $product->slug) }}"><img src="assets/img/product/{{$product->id}}.jpg" alt=""></a>
                           </div>
                           <div class="product_hover">
                             <div class="product_action">
                               <a href="#" title="Add To Cart"><i class="zmdi zmdi-shopping-cart-plus"></i></a>
-                              <a href="{{ route('wishlist.add', $product->id) }}" title="Add To Wishlist"><i class="zmdi zmdi-favorite-outline"></i></a>
+                              <a href="{{ route('wishlist.store', $product->slug) }}" title="Add To Wishlist"><i class="zmdi zmdi-favorite-outline"></i></a>
                               <a href="#" title="Compare"><i class="zmdi zmdi-refresh-alt"></i></a>
                             </div>
                             <div class="product__desc">
-                              <h3><a href="product-details.html">{{ $product->name }}</a></h3>
+                              <h3><a href="{{ route('product.show', $product->slug) }}">{{ $product->name }}</a></h3>
                               <div class="price_amount">
                                 <span class="current_price">${{ $product->current_price }}</span>
                                 <span class="discount_price">{{ $product->discount_price }}</span>

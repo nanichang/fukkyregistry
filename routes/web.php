@@ -23,9 +23,13 @@ Route::group(['prefix' => 'auth'], function() {
 Route::group(['prefix' => 'dashboard'], function() {
   // Route::get('/', 'DashboardController@index')->name('dashboard.index');
   Route::get('/wishlist', 'WishlistController@index')->name('wishlist.index');
+  // Route::get('/{slug}/friends', 'FriendController@index')->name('friends.index');
+  Route::get('/my/wishlist/{slug}', 'WishlistController@myList')->name('my.wishlist');
 });
 
 Route::group(['prefix' => 'shop'], function() {
   Route::get('/', 'ShopController@index')->name('shop.index');
   Route::get('/wishlist/{slug}', 'WishlistController@store')->name('wishlist.store');
+  Route::get('/my/wishlist/{slug}', 'WishlistController@store')->name('wishlist.store');
+  Route::get('/product-detail/{slug}', 'ProductController@show')->name('product.show');
 });

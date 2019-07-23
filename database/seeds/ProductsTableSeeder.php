@@ -69,7 +69,7 @@ class ProductsTableSeeder extends Seeder {
         'a_img' => 'f0a95-mpd000a.jpg',
         'b_img' => '87131-mpd000b.jpg',
         'c_img' => '',
-        'category_id' => 8,
+        'category_id' => 2,
         'quantity' => 23,
         'current_price' => 19.0,
       ),

@@ -44,7 +44,7 @@ class LoginController extends Controller {
               // return redirect()->route('account.update', $authUser->id);
               return "Update Account";
             } elseif ($bioStatus == 1) {
-              return redirect()->route('wishlist.index',$authUser->slug);
+              return redirect()->route('shop.index',$authUser->slug);
             }                 
           } elseif (Sentinel::getUser()->roles()->first()->slug == 'member') {
               

@@ -22,6 +22,8 @@ class CreateWishlistsTable extends Migration {
 			$table->string('user_id');
 			$table->boolean('purchased')->default(false);
 			$table->string('slug')->nullable();
+			// $table->bigInteger('user_id')->unsigned();
+			// $table->foreign('user_id')->references('id')->on('users');
 			$table->timestamps();
 		});
 	}

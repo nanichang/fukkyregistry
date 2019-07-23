@@ -24,8 +24,13 @@
 		<form action="#">
 			<div class="container">
 				<div class="row">
+
 					<div class="col-12">
+
 						<div class="wishlist-table table-responsive">
+							<p>
+								<strong>Sharable Link:</strong> 
+								<input type="text" value="{{ $user->sharable_link }}/{{$user->slug}}" readonly></p>
 							<table>
 								<thead>
 									<tr>
@@ -33,7 +38,7 @@
 										<th class="pro-thumbnail">Image</th>
 										<th class="pro-title">Product</th>
 										<th class="pro-price">Unit Price</th>
-										<th class="pro-stock-stauts">Stock Stauts</th>
+										<!-- <th class="pro-stock-stauts">Stock Stauts</th> -->
 										<th class="pro-add-to-cart">Add to Cart</th>
 									</tr>
 								</thead>
@@ -41,10 +46,10 @@
 									@foreach($wishlists as $wishlist)
 										<tr>
 											<td class="pro-remove"><a href="#">×</a></td>
-											<td class="pro-thumbnail"><a href="#"><img src="assets/img/product/pro_sm_1.png" alt="" /></a></td>
+											<td class="pro-thumbnail"><a href="#"><img src="assets/img/product/{{$wishlist->product_image}}" alt="" /></a></td>
 											<td class="pro-title"><a href="#">{{ $wishlist->product_name }}</a></td>
 											<td class="pro-price"><span class="amount">${{ $wishlist->current_price }}</span></td>
-											<td class="pro-stock-stauts"><span class="in-stock">in stock</span></td>
+											<!-- <td class="pro-stock-stauts"><span class="in-stock">in stock</span></td> -->
 											<td class="pro-add-to-cart">
 												@if($wishlist->purchased === 0)
 													<a href="#" class="add-to-cart">Buy Now</a>

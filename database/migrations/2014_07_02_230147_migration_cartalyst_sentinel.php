@@ -109,6 +109,7 @@ class MigrationCartalystSentinel extends Migration
             $table->string('facebook')->nullable();
             $table->string('instagram')->nullable();
             $table->integer('bio_status')->default(1);
+            $table->string('sharable_link');
             $table->timestamps();
 
             $table->engine = 'InnoDB';

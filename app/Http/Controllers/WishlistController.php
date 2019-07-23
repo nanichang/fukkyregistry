@@ -23,8 +23,9 @@ class WishlistController extends Controller
         else{
             $authUser = Sentinel::getUser();
             $wishlists = Wishlist::orderBy('created_at', 'desc')->where('user_id', $authUser->id)->get();
-            dd($wishlists);
-            return view('wishlist.index')->with('wishlists', $wishlists);
+            // $sharable = $authUser->sharable_link;
+            // dd($authUser);
+            return view('wishlist.index')->with('wishlists', $wishlists)->with('user', $authUser);
         }
     }
     
@@ -33,25 +34,29 @@ class WishlistController extends Controller
         //
     }
     
-    public function store(Request $request, $slug)
-    {
-        // dd($slug);
-        $product = $this->productsRepo->findBySlug($slug);
-        // dd($product);
+    public function store(Request $request, $slug) {
+        if(!Sentinel::check()) {
+            return redirect()->route('auth.login');
+        }
+        else{
+            // dd($slug);
+            $product = $this->productsRepo->findBySlug($slug);
+            // dd($product);
 
-        $wishlist = new Wishlist();
-        $wishlist->product_id = $product->id;
-        $wishlist->product_name = $product->name;
-        $wishlist->description = $product->description;
-        $wishlist->quantity = 1;
-        $wishlist->current_price = $product->current_price;
-        $wishlist->product_image = $product->a_img;
-        $wishlist->user_id = Sentinel::getUser()->id;
-        $wishlist->purchased = false;
-        $wishlist->slug = strtolower($product->slug);
-        $wishlist->save();
-        
-        return redirect()->back();
+            $wishlist = new Wishlist();
+            $wishlist->product_id = $product->id;
+            $wishlist->product_name = $product->name;
+            $wishlist->description = $product->description;
+            $wishlist->quantity = 1;
+            $wishlist->current_price = $product->current_price;
+            $wishlist->product_image = $product->a_img;
+            $wishlist->user_id = Sentinel::getUser()->id;
+            $wishlist->purchased = false;
+            $wishlist->slug = strtolower($product->slug);
+            $wishlist->save();
+            
+            return redirect()->back();
+        }
     }
     
     public function show($id)

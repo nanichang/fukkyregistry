@@ -141,9 +141,14 @@
         <div class="col-lg-4 col-12">
           <div class="header_right_info">
             <ul>
-              <li><a href="{{ route('wishlist.index') }}">Wishlist<span> <i class="zmdi zmdi-favorite-outline"></i> (0) </span></a></li>
+              
               @if(Sentinel::check())
-              ''
+                <li>
+                  <a href="{{ route('wishlist.index') }}">
+                    Wishlist
+                    <span> <i class="zmdi zmdi-favorite-outline"></i> (0) </span>
+                  </a>
+                </li>
               @else
                 <li> <a href="{{ route('auth.login') }}">Login</a></li>
               @endif
