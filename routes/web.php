@@ -33,3 +33,8 @@ Route::group(['prefix' => 'shop'], function() {
   Route::get('/my/wishlist/{slug}', 'WishlistController@store')->name('wishlist.store');
   Route::get('/product-detail/{slug}', 'ProductController@show')->name('product.show');
 });
+
+Route::group(['prefix' => 'shared'], function() {
+  Route::get('/my/wishlist/{slug}', 'WishlistController@myList')->name('shared.wishlist');
+  Route::get('/my/wishlist/{slug}/purchase/{product}', 'WishlistController@purchase')->name('wishlist.purchase');
+});

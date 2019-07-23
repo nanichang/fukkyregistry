@@ -16,6 +16,7 @@
     <link href="{{ URL::asset('/assets/css/bundle.css') }}" rel="stylesheet">
     <link href="{{ URL::asset('/assets/css/style.css') }}" rel="stylesheet">
     <link href="{{ URL::asset('/assets/css/responsive.css') }}" rel="stylesheet">
+    @yield('styles')
     
     <script src="{{ URL::asset('/assets/js/vendor/modernizr-2.8.3.min.js') }}"></script>
   </head>
@@ -39,5 +40,6 @@
     <script src="{{ URL::asset('/assets/js/bootstrap.min.js') }}"></script>
     <script src="{{ URL::asset('/assets/js/plugins.js') }}"></script>
     <script src="{{ URL::asset('/assets/js/main.js') }}"></script>
+    $yield('scripts')
   </body>
 </html>

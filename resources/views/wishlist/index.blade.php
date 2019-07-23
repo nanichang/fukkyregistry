@@ -48,7 +48,7 @@
 											<td class="pro-remove"><a href="#">×</a></td>
 											<td class="pro-thumbnail"><a href="#"><img src="assets/img/product/{{$wishlist->product_image}}" alt="" /></a></td>
 											<td class="pro-title"><a href="#">{{ $wishlist->product_name }}</a></td>
-											<td class="pro-price"><span class="amount">${{ $wishlist->current_price }}</span></td>
+											<td class="pro-price"><span class="amount"> &#x20A6; {{ $wishlist->current_price }}</span></td>
 											<!-- <td class="pro-stock-stauts"><span class="in-stock">in stock</span></td> -->
 											<td class="pro-add-to-cart">
 												@if($wishlist->purchased === 0)

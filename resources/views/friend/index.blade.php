@@ -11,6 +11,8 @@
             <li><a href="#">Home</a></li>
             <li><i class="zmdi zmdi-chevron-right"></i></li>
             <li>Wishlist</li>
+            <li><i class="zmdi zmdi-chevron-right"></i></li>
+            <li>{{ $user->first_name }}</li>
           </ul>
           </div>
         </div>
@@ -43,17 +45,17 @@
                       <td class="pro-remove"><a href="#">×</a></td>
                       <td class="pro-thumbnail"><a href="#"><img src="assets/img/product/{{$wishlist->product_image}}" alt="" /></a></td>
                       <td class="pro-title"><a href="#">{{ $wishlist->product_name }}</a></td>
-                      <td class="pro-price"><span class="amount">${{ $wishlist->current_price }}</span></td>
+                      <td class="pro-price"><span class="amount"> &#x20A6; {{ $wishlist->current_price }}</span></td>
                       <!-- <td class="pro-stock-stauts"><span class="in-stock">in stock</span></td> -->
                       <td class="pro-add-to-cart">
                         @if($wishlist->purchased === 0)
-                          <a href="#" class="add-to-cart">Buy Now</a>
+                          <a href="{{ route('wishlist.purchase', [$user->slug, $wishlist->slug]) }}" class="add-to-cart">Buy Now</a>
                         @else
                           <a href="#" class="add-to-cart">Purchased</a>
                         @endif
                       </td>
                     </tr>
-                  @endforeach                 
+                  @endforeach
                 </tbody>
               </table>
             </div>
