@@ -18,6 +18,7 @@ Route::group(['prefix' => 'auth'], function() {
   Route::post('/login', 'LoginController@post')->name('auth.post.login');
   Route::get('/register', 'RegisterController@register')->name('auth.register');
   Route::post('/register', 'RegisterController@store')->name('auth.post.register');
+  Route::post('/logout', 'LoginController@logout')->name('auth.logout');
 });
 
 Route::group(['prefix' => 'dashboard'], function() {
@@ -37,4 +38,12 @@ Route::group(['prefix' => 'shop'], function() {
 Route::group(['prefix' => 'shared'], function() {
   Route::get('/my/wishlist/{slug}', 'WishlistController@myList')->name('shared.wishlist');
   Route::get('/my/wishlist/{slug}/purchase/{product}', 'WishlistController@purchase')->name('wishlist.purchase');
+  Route::post('/my/wishlist/{slug}/purchase/{product}', 'BillingController@store')->name('wishlist.purchase.process');
+
+});
+
+Route::group(['prefix' => 'admin'], function() {
+  Route::get('/', 'AdminController@index')->name('admin.index');
+  Route::post('/confirm-payment/{id}', 'BillingController@approvePayment')->name('payment.approve');
+
 });

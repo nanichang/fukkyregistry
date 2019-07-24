@@ -70,7 +70,8 @@
           </div>
         </div>
       </div>
-      <form action="#">
+      <form action="{{ route('wishlist.purchase.process', [$user->slug, $wishlist->slug]) }}" method="post">
+        {{ csrf_field() }}
         <div class="row">
           <div class="col-lg-6 col-md-12 col-12">
             <!-- <form action="#"> -->
@@ -80,7 +81,7 @@
                   <div class="col-md-12">
                     <div class="country-select">
                       <label>Country <span class="required">*</span></label>
-                      <select>
+                      <select name="country">
                         <option value="Nigeria">Nigeria</option>
                       </select>                     
                     </div>
@@ -105,141 +106,134 @@
                   </div>
                   <div class="col-md-12">
                     <div class="checkout-form-list">                  
-                      <input type="text" placeholder="Apartment, suite, unit etc. (optional)" />
+                      <input type="text" placeholder="Apartment, suite, unit etc. (optional)" name="address2" />
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="checkout-form-list">
                       <label>Town / City <span class="required">*</span></label>
-                      <input type="text" />
+                      <input type="text" name="city" />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="checkout-form-list">
                       <label>State / County <span class="required">*</span></label>                   
-                      <input type="text" placeholder="" />
+                      <input type="text" placeholder="" name="state" />
                     </div>
                   </div>
-                    <div class="col-md-6">
-                        <div class="checkout-form-list">
-                            <label>Postcode / Zip <span class="required">*</span></label>                   
-                            <input type="text" />
-                        </div>
+                  <div class="col-md-6">
+                    <div class="checkout-form-list">
+                      <label>Postcode / Zip <span class="required">*</span></label>                   
+                      <input type="text" name="zip_code" />
                     </div>
-                    <div class="col-md-6">
-                        <div class="checkout-form-list">
-                            <label>Email Address <span class="required">*</span></label>                    
-                            <input type="email" />
-                        </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="checkout-form-list">
+                      <label>Email Address <span class="required">*</span></label>                    
+                      <input type="email" name="email" />
                     </div>
-                    <div class="col-md-6">
-                        <div class="checkout-form-list">
-                            <label>Phone  <span class="required">*</span></label>                   
-                            <input type="text" />
-                        </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="checkout-form-list">
+                      <label>Phone  <span class="required">*</span></label>                   
+                      <input type="text" name="phone_number" />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="checkout-form-list create-acc"> 
+                      <input id="cbox" type="checkbox" name="create_account" />
+                      <label for="cbox">Create an account?</label>
+                    </div>
+                    <div id="cbox_info" class="checkout-form-list create-account">
+                      <p>Create an account by entering the information below. If you are a returning customer please login at the top of the page.</p>
+                      <label>Account password  <span class="required">*</span></label>
+                      <input type="password" placeholder="password" name="password" />  
+                    </div>
+                  </div>                
+                </div>
+                <div class="different-address">
+                  <div class="ship-different-title">
+                    <h3>
+                      <label for="ship-box">Ship to a different address?</label>
+                      <input id="ship-box" type="checkbox" name="shipping" />
+                    </h3>
+                  </div>
+                  <div id="ship-box-info" class="row">
+                    <div class="col-md-12">
+                      <div class="country-select">
+                        <label>Country <span class="required">*</span></label>
+                        <select name="country2">
+                          <option value="Nigeria">Nigeria</option>
+                        </select>                     
+                      </div>
                     </div>
                     <div class="col-md-12">
-                        <div class="checkout-form-list create-acc"> 
-                            <input id="cbox" type="checkbox" />
-                            <label for="cbox">Create an account?</label>
-                        </div>
-                        <div id="cbox_info" class="checkout-form-list create-account">
-                            <p>Create an account by entering the information below. If you are a returning customer please login at the top of the page.</p>
-                            <label>Account password  <span class="required">*</span></label>
-                            <input type="password" placeholder="password" />  
-                        </div>
+                      <div class="checkout-form-list">
+                        <label>First Name <span class="required">*</span></label>                   
+                        <input type="text" placeholder="" name="first_name2" />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="checkout-form-list">
+                        <label>Last Name <span class="required">*</span></label>                    
+                        <input type="text" placeholder="" name="last_name2" />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="checkout-form-list">
+                        <label>Company Name</label>
+                        <input type="text" placeholder="" />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="checkout-form-list">
+                        <label>Address <span class="required">*</span></label>
+                        <input type="text" placeholder="Street address" name="address22" />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="checkout-form-list">                  
+                        <input type="text" placeholder="Apartment, suite, unit etc. (optional)" name="address222" />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="checkout-form-list">
+                        <label>Town / City <span class="required">*</span></label>
+                        <input type="text" placeholder="Town / City" name="city2" />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="checkout-form-list">
+                        <label>State / County <span class="required">*</span></label>                   
+                        <input type="text" placeholder="" name="state2" />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="checkout-form-list">
+                        <label>Postcode / Zip <span class="required">*</span></label>                   
+                        <input type="text" placeholder="Postcode / Zip" name="zip_code2" />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="checkout-form-list">
+                        <label>Email Address <span class="required">*</span></label>                    
+                        <input type="email" placeholder="" name="email2" />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="checkout-form-list">
+                        <label>Phone  <span class="required">*</span></label>                   
+                        <input type="text" placeholder="Postcode / Zip"  name="phone_number2" />
+                      </div>
                     </div>                
-                </div>
-                  <div class="different-address">
-                      <div class="ship-different-title">
-                          <h3>
-                              <label for="ship-box">Ship to a different address?</label>
-                              <input id="ship-box" type="checkbox" />
-                          </h3>
-                      </div>
-                      <div id="ship-box-info" class="row">
-                          <div class="col-md-12">
-                              <div class="country-select">
-                                  <label>Country <span class="required">*</span></label>
-                                  <select>
-                                    <option value="volvo">bangladesh</option>
-                                    <option value="saab">Algeria</option>
-                                    <option value="mercedes">Afghanistan</option>
-                                    <option value="audi">Ghana</option>
-                                    <option value="audi2">Albania</option>
-                                    <option value="audi3">Bahrain</option>
-                                    <option value="audi4">Colombia</option>
-                                    <option value="audi5">Dominican Republic</option>
-                                  </select>                     
-                              </div>
-                          </div>
-                          <div class="col-md-12">
-                              <div class="checkout-form-list">
-                                  <label>First Name <span class="required">*</span></label>                   
-                                  <input type="text" placeholder="" />
-                              </div>
-                          </div>
-                          <div class="col-md-12">
-                              <div class="checkout-form-list">
-                                  <label>Last Name <span class="required">*</span></label>                    
-                                  <input type="text" placeholder="" />
-                              </div>
-                          </div>
-                          <div class="col-md-12">
-                              <div class="checkout-form-list">
-                                  <label>Company Name</label>
-                                  <input type="text" placeholder="" />
-                              </div>
-                          </div>
-                          <div class="col-md-12">
-                              <div class="checkout-form-list">
-                                  <label>Address <span class="required">*</span></label>
-                                  <input type="text" placeholder="Street address" />
-                              </div>
-                          </div>
-                          <div class="col-md-12">
-                              <div class="checkout-form-list">                  
-                                  <input type="text" placeholder="Apartment, suite, unit etc. (optional)" />
-                              </div>
-                          </div>
-                          <div class="col-md-12">
-                              <div class="checkout-form-list">
-                                  <label>Town / City <span class="required">*</span></label>
-                                  <input type="text" placeholder="Town / City" />
-                              </div>
-                          </div>
-                          <div class="col-md-12">
-                              <div class="checkout-form-list">
-                                  <label>State / County <span class="required">*</span></label>                   
-                                  <input type="text" placeholder="" />
-                              </div>
-                          </div>
-                          <div class="col-md-12">
-                              <div class="checkout-form-list">
-                                  <label>Postcode / Zip <span class="required">*</span></label>                   
-                                  <input type="text" placeholder="Postcode / Zip" />
-                              </div>
-                          </div>
-                          <div class="col-md-12">
-                              <div class="checkout-form-list">
-                                  <label>Email Address <span class="required">*</span></label>                    
-                                  <input type="email" placeholder="" />
-                              </div>
-                          </div>
-                          <div class="col-md-12">
-                              <div class="checkout-form-list">
-                                  <label>Phone  <span class="required">*</span></label>                   
-                                  <input type="text" placeholder="Postcode / Zip" />
-                              </div>
-                          </div>                
-                      </div>
-                      <div class="order-notes">
-                          <div class="checkout-form-list mrg-nn">
-                              <label>Order Notes</label>
-                              <textarea id="checkout-mess" cols="30" rows="10" placeholder="Notes about your order, e.g. special notes for delivery." ></textarea>
-                          </div>                  
-                      </div>
-                  </div>                          
+                  </div>
+                  <div class="order-notes">
+                    <div class="checkout-form-list mrg-nn">
+                      <label>Order Notes</label>
+                      <textarea id="checkout-mess" cols="30" rows="10" placeholder="Notes about your order, e.g. special notes for delivery." name="note"></textarea>
+                    </div>                  
+                  </div>
+                </div>                          
               </div>
             <!-- </form> -->
           </div>  
@@ -258,13 +252,16 @@
                     <tr class="cart_item">
                       <td class="product-name">
                         {{ $wishlist->product_name }} 
+                        <input type="hidden" name="product_name" value="{{ $wishlist->product_name }}">
                         <strong class="product-quantity"> 
                           × 
                           {{ $wishlist->quantity }}
+                          <input type="hidden" name="quantity" value="{{ $wishlist->quantity }}">
                         </strong>
                       </td>
                       <td class="product-total">
                         <span class="amount">&#x20A6; {{ $wishlist->current_price }}</span>
+                        <input type="hidden" name="current_price" value="{{ $wishlist->current_price }}">
                       </td>
                     </tr>                    
                   </tbody>
@@ -286,14 +283,24 @@
                 <div class="payment-accordion">
                   <div class="panel-group" id="faq">
                     <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h5 class="panel-title"><a data-toggle="collapse" aria-expanded="true" data-parent="#faq" href="#payment-1">Direct Bank Transfer.</a></h5>
+                      <div class="panel-heading">
+                        <h5 class="panel-title">
+                          <a data-toggle="collapse" aria-expanded="true" data-parent="#faq" href="#payment-1">Direct Bank Transfer.</a>
+                        </h5>
+                      </div>
+                      <div id="payment-1" class="panel-collapse collapse show">
+                        <div class="panel-body">
+                          <p>
+                            Make your payment directly into our bank account. 
+                            <br /> 
+                            Account Name: <strong> Fukky Registry</strong> <br />
+                            Account Number: <strong> 1234567890</strong> <br />
+                            Bank Name: <strong>First Bank Nigeria</strong> <br />
+
+                            Please use <strong>{{ $user->slug }}</strong> as the depositor reference. Your order won’t be shipped until the funds have cleared in our account.
+                          </p>
                         </div>
-                        <div id="payment-1" class="panel-collapse collapse show">
-                            <div class="panel-body">
-                                <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
-                            </div>
-                        </div>
+                      </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">

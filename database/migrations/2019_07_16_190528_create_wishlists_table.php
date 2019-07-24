@@ -20,7 +20,8 @@ class CreateWishlistsTable extends Migration {
 			$table->string('current_price');
 			$table->string('product_image');
 			$table->string('user_id');
-			$table->boolean('purchased')->default(false);
+			// $table->string('purchased')->default('false');
+			$table->enum('status',['unpaid', 'processing', 'paid'])->default('unpaid');
 			$table->string('slug')->nullable();
 			// $table->bigInteger('user_id')->unsigned();
 			// $table->foreign('user_id')->references('id')->on('users');

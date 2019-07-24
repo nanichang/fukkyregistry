@@ -48,10 +48,10 @@
                       <td class="pro-price"><span class="amount"> &#x20A6; {{ $wishlist->current_price }}</span></td>
                       <!-- <td class="pro-stock-stauts"><span class="in-stock">in stock</span></td> -->
                       <td class="pro-add-to-cart">
-                        @if($wishlist->purchased === 0)
+                        @if($wishlist->status == 'unpaid')
                           <a href="{{ route('wishlist.purchase', [$user->slug, $wishlist->slug]) }}" class="add-to-cart">Buy Now</a>
-                        @else
-                          <a href="#" class="add-to-cart">Purchased</a>
+                        @elseif($wishlist->status == 'processing')
+                          <a href="#" class="add-to-cart">Processing</a>
                         @endif
                       </td>
                     </tr>

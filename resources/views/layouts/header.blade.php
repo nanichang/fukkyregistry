@@ -140,8 +140,7 @@
         </div>
         <div class="col-lg-4 col-12">
           <div class="header_right_info">
-            <ul>
-              
+            <ul>              
               @if(Sentinel::check())
                 <li>
                   <a href="{{ route('wishlist.index') }}">
@@ -149,6 +148,11 @@
                     <span> <i class="zmdi zmdi-favorite-outline"></i> (0) </span>
                   </a>
                 </li>
+                <li> <a href="{{ route('auth.login') }}" onclick="document.getElementById('logout-form').submit()" style="cursor: pointer;">Logout</a></li>
+                <form  action="{{ route('auth.logout') }}" method="post" id="logout-form">
+                  {{ csrf_field() }}
+                  <!-- <li><a href="#">Logout</a> </li>                    -->
+                </form>
               @else
                 <li> <a href="{{ route('auth.login') }}">Login</a></li>
               @endif

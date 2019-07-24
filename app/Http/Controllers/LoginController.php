@@ -37,7 +37,7 @@ class LoginController extends Controller {
         $bioStatus = Sentinel::getUser()->bio_status;
         try {
           if (Sentinel::getUser()->roles()->first()->slug == 'admin') {
-            // return redirect()->route('super_admin_dash');
+            return redirect()->route('admin.index');
           } elseif (Sentinel::getUser()->roles()->first()->slug == 'registry') {
 
             if($bioStatus == 0) {

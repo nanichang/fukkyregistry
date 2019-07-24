@@ -10,9 +10,9 @@ class ProductsTableSeeder extends Seeder {
    */
   public function run() {
 
-    \DB::table('products')->delete();
+    DB::table('products')->delete();
         
-    \DB::table('products')->insert(array (
+    DB::table('products')->insert(array (
       0 => array (
         'id' => 1,
         'slug' => 'CK-Blue-Schoolboy-Blazer'.rand(),

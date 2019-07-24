@@ -21,20 +21,20 @@ class EloquentWishlistRepository implements WishlistContract {
 
   // return all Products
   public function findAll() {
-    $products = Product::all();
+    $products = Wishlist::all();
     return $products;
   }
 
-  // return a Product by ID
+  // return a Wishlist by ID
   public function findById($id) {
-    return Product::where('id', $id)->first();
+    return Wishlist::where('id', $id)->first();
   }
 
   public function findBySlug($slug){
-    return Product::where('slug', $slug)->first();
+    return Wishlist::where('slug', $slug)->first();
   }
 
-  // Update a Product
+  // Update a Wishlist
   public function update($request, $id) {
     $product = $this->findById($id);
     $product->title = $request->title;
@@ -43,9 +43,23 @@ class EloquentWishlistRepository implements WishlistContract {
     return $product;
   }
 
+  public function updatePaymentStatus($id){
+    $product = $this->findById($id);
+    $product->status = 'processing';
+    $product->save();
+    return $product;
+  }
+
+  public function approvePayment($id) {
+    $product = $this->findById($id);
+    $product->status = 'paid';
+    $product->save();
+    return $product; 
+  }
+
   // Remove a Blog
   public function remove($id) {
-      $product= $this->findById($id);
-      return $product->delete();
+    $product= $this->findById($id);
+    return $product->delete();
   }
 }

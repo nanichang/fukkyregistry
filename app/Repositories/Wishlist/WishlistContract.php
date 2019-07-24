@@ -6,5 +6,6 @@ interface WishlistContract {
   public function findById($id);
   public function findBySlug($slug);
   public function update($request, $id);
+  public function updatePaymentStatus($id);
   public function remove($id);
 }

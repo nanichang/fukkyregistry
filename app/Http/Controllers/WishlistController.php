@@ -24,8 +24,6 @@ class WishlistController extends Controller
 		else{
 			$authUser = Sentinel::getUser();
 			$wishlists = Wishlist::orderBy('created_at', 'desc')->where('user_id', $authUser->id)->get();
-			// $sharable = $authUser->sharable_link;
-			// dd($authUser);
 			return view('wishlist.index')->with('wishlists', $wishlists)->with('user', $authUser);
 		}
 	}
@@ -45,7 +43,6 @@ class WishlistController extends Controller
 			$wishlist->current_price = $product->current_price;
 			$wishlist->product_image = $product->a_img;
 			$wishlist->user_id = Sentinel::getUser()->id;
-			$wishlist->purchased = false;
 			$wishlist->slug = strtolower($product->slug);
 			$wishlist->save();
 			
@@ -60,13 +57,9 @@ class WishlistController extends Controller
 	}
 
 	public function purchase($slug, $product) {
-
-		// dd($product);
 		$user = User::where('slug', $slug)->first();
 		$wish = Wishlist::where('slug', $product)->first();
-		// Auth::user()->cart()->products()->sum('price');
 		$sum = $wish->sum('current_price');
-		// dd($wish);
 		return view('checkout.index')->with('wishlist', $wish)->with('user', $user);
 	}
 	

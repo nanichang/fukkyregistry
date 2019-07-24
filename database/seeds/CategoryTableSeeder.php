@@ -9,9 +9,9 @@ class CategoryTableSeeder extends Seeder {
    * @return void
    */
   public function run() {
-    \DB::table('categories')->delete();
+    DB::table('categories')->delete();
       
-    \DB::table('categories')->insert(array (
+    DB::table('categories')->insert(array (
       0 => array (
         'id' => 1,  
         'name' => 'Men',
