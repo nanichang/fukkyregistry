@@ -43,10 +43,10 @@
 
 /*====== 2. Header css here ======*/
 .header_top {
-  background: #0e0c15 none repeat scroll 0 0;
+  background: #11bfeb none repeat scroll 0 0;
 }
 header {
-    background: #151320 none repeat scroll 0 0;
+    background: #11bfeb none repeat scroll 0 0;
     position: relative;
 }
 .welcome_text p {
@@ -83,7 +83,7 @@ header {
     padding-right: 0;
 }
 .header_top {
-  background: #0e0c15 none repeat scroll 0 0;
+  background: #11bfeb none repeat scroll 0 0;
   padding: 20px 0;
 }
 .header_right_info li:hover a {
@@ -127,7 +127,7 @@ header {
 } 
 .header_right_info ul.sub__menu li a {
     border-bottom: 1px solid #f1f1f1;
-    color: #151320;
+    color: #11bfeb;
     display: block;
     font-weight: 400;
     padding: 8px 12px;
@@ -250,7 +250,7 @@ header {
   width: 50px;
 }
 .mini_cart_box_wrapper > a span.cart_count {
-  background: #0e0c15 none repeat scroll 0 0;
+  background: #11bfeb none repeat scroll 0 0;
   border: 1px solid #fff3ee;
   border-radius: 50%;
   color: #fff3ee;
@@ -304,8 +304,8 @@ header {
 	background: #fff;
 	z-index: 9;
 	min-width: 180px;
-	-webkit-box-shadow: 0 0 15px 0.08px rgba(0, 0, 0, 0.15);
-	box-shadow: 0 0 15px 0.08px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 0 0 15px 0.08px rgb(0.07,0.75,0.92);
+	box-shadow: 0 0 15px 0.08px rgb(0.07,0.75,0.92);
 	padding: 15px 20px;
 	-webkit-transition: .3s;
 	transition: .3s;
@@ -1027,36 +1027,36 @@ footer.footer_area {
   background: #fff none repeat scroll 0 0;
 }
 .white__bg .menu ul li a {
-  color: #151320;
+  color: #0dd5f0;
 }
 .white__bg .menu nav > ul > li:hover > a {
 	color: #fa0f07;
 }
 .white__bg .mini_cart_box_wrapper > a {
-    border-color: #151320;
+    border-color: #0dd5f0;
 }
 .white__bg .mini_cart_box_wrapper > a span.cart_count {
 	background: #fff none repeat scroll 0 0;
-	border-color: #151320;
-	color: #151320;
+	border-color: #0dd5f0;
+	color: #0dd5f0;
 }
 .white__bg .category_search_inner {
     border-color: #151320;
 }
 .white__bg .header_right_info > ul > li > a {
-	color: #151320;
+	color: #0dd5f0;
 }
 .white__bg .category_search .nice-select span.current {
-  color: #151320;
+  color: #0dd5f0;
 }
 .white__bg .category_search .search input,.white__bg .category_search .submit button {
-  color: #151320;
+  color: #0dd5f0;
 }
 .white__bg .category_search .submit button:hover,.white__bg .header_right_info > ul > li > a:hover {
   color: #fa0f07;
 }
 .white__bg .search input::-webkit-input-placeholder {
-  color: #151320;
+  color: #0dd5f0;
 }
 .white__bg .search input:-ms-input-placeholder {
   color: #151320;
@@ -1089,7 +1089,7 @@ footer.footer_area {
 }
 .slider__2  .slider-content > a {
   background: #f3f3f3 none repeat scroll 0 0;
-  color: #151320;
+  color: #0dd5f0;
 }
 .slider__2  .slider-content > a:hover {
   background: #fa0f07 none repeat scroll 0 0;
@@ -1104,7 +1104,7 @@ footer.footer_area {
 }
 .slider__2 .slider-active .owl-nav > div {
   background: #fff3ee none repeat scroll 0 0;
-  color: #151320;
+  color: #0dd5f0;
 }
 
 .slider__2 .slider-active .owl-nav > div:hover {
@@ -1119,7 +1119,7 @@ footer.footer_area {
 }
 /*----------- 14. Mini cart box css here --------*/
 .icon_cart i {
-    color: #151320;
+    color: #0dd5f0;
     font-size: 35px;
     -webkit-transition: all .3s ease 0s;
     transition: all .3s ease 0s;

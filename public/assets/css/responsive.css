@@ -349,6 +349,7 @@
     }
     .logo {
       text-align: center;
+      size: 100;
     }
     .header_right_info > ul > li {
        margin-right: 12px;

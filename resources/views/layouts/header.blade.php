@@ -4,7 +4,7 @@
       <div class="row align-items-center">
         <div class="col-lg-3 col-md-3">
           <div class="logo">
-            <a href="index.html"><img src="assets/img/logo/logo.png" alt="exporso logo"></a>
+            <a href="index.html"><img src="assets/img/logo/Fukki.png" alt="logo"></a>
           </div>
         </div>
         <div class="col-lg-7 col-md-8">
