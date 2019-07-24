@@ -52,6 +52,8 @@
                           <a href="{{ route('wishlist.purchase', [$user->slug, $wishlist->slug]) }}" class="add-to-cart">Buy Now</a>
                         @elseif($wishlist->status == 'processing')
                           <a href="#" class="add-to-cart">Processing</a>
+                        @else
+                          <a href="#" class="add-to-cart">Paid</a>
                         @endif
                       </td>
                     </tr>

@@ -44,6 +44,6 @@ Route::group(['prefix' => 'shared'], function() {
 
 Route::group(['prefix' => 'admin'], function() {
   Route::get('/', 'AdminController@index')->name('admin.index');
-  Route::post('/confirm-payment/{id}', 'BillingController@approvePayment')->name('payment.approve');
+  Route::put('/confirm-payment/{id}', 'AdminController@updatePayment')->name('payment.approve');
 
 });

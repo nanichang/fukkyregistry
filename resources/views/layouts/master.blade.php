@@ -40,6 +40,6 @@
     <script src="{{ URL::asset('/assets/js/bootstrap.min.js') }}"></script>
     <script src="{{ URL::asset('/assets/js/plugins.js') }}"></script>
     <script src="{{ URL::asset('/assets/js/main.js') }}"></script>
-    $yield('scripts')
+    @yield('scripts')
   </body>
 </html>

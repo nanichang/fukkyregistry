@@ -52,7 +52,10 @@ class WishlistController extends Controller
 	
 	public function myList($slug) {
 		$user = User::where('slug', $slug)->first();
-		$wish = Wishlist::where('user_id', $user->id)->get();
+		$wish = Wishlist::where('user_id', $user->id)
+			->where('status', '=', 'unpaid')
+			->orWhere('status', '=', 'processing')
+			->get();
 		return view('friend.index')->with('wishlists', $wish)->with('user', $user);
 	}
 

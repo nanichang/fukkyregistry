@@ -50,7 +50,7 @@ class EloquentWishlistRepository implements WishlistContract {
     return $product;
   }
 
-  public function approvePayment($id) {
+  public function approvePayment ($id) {
     $product = $this->findById($id);
     $product->status = 'paid';
     $product->save();

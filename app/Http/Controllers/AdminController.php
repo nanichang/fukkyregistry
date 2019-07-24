@@ -31,6 +31,7 @@ class AdminController extends Controller {
 	}
 	
 	public function updatePayment(Request $request, $id) {
-		$this->wishlistRepo->approvePayment($id);
+		$payment = $this->wishlistRepo->approvePayment($id);
+		return redirect()->back();
 	}
 }
