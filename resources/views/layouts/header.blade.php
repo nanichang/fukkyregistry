@@ -4,7 +4,7 @@
       <div class="row align-items-center">
         <div class="col-lg-3 col-md-3">
           <div class="logo">
-            <a href="index.html"><img src="assets/img/logo/Fukki.png" alt="logo"></a>
+            <a href="/"><img src="assets/img/logo/Fukki.png" alt="logo" width="80px"></a>
           </div>
         </div>
         <div class="col-lg-7 col-md-8">
@@ -30,7 +30,7 @@
             </form>
           </div>
         </div>
-        <div class="col-lg-2 col-md-1">
+        <!-- <div class="col-lg-2 col-md-1">
           <div class="mini_cart_box_wrapper text-right">
             <a href="#">
               <img src="assets/img/icon/cart.png" alt="Mini Cart Icon">
@@ -78,7 +78,7 @@
               </li>
             </ul>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -90,50 +90,9 @@
             <nav>
               <ul>                                                  
                 <li><a href="/">HOME</a></li>
-                <li><a href="about-us.html">About</a></li>
+                <li><a href="/about">About</a></li>
                 <li><a href="{{ route('shop.index') }}">Shop</a></li>
-                <li><a href="blog.html">Blog <i class="zmdi zmdi-chevron-down"></i></a>
-                  <ul class="sub_menu">
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="blog-sidebar.html">Blog Sidebar</a></li>
-                    <li><a href="blog-details.html">Blog Details</a></li>
-                  </ul>
-                </li>
-                <li><a href="contact-us.html">CONTACT </a></li>
-                <li class="mega_item"><a href="#">Features <i class="zmdi zmdi-chevron-down"></i></a>
-                  <ul class="mega_menu">
-                    <li><a href="#">Column1</a>
-                      <ul class="mega_dropdown">
-                        <li><a href="shop.html">Shop </a></li>
-                        <li><a href="shop-list.html">Shop List</a></li>
-                        <li><a href="shop-right-sidebar.html">Shop Right Sidebar </a></li>
-                        <li><a href="shop-without-sidebar.html">Shop without Sidebar </a></li>
-                        <li><a href="shop-list-without-sidebar.html">Shop List without Sidebar </a></li>
-                        <li><a href="product-details.html">Product Details</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Column2</a>
-                      <ul class="mega_dropdown">
-                        <li><a href="product-details-sidebar.html">product Details Sidebar</a></li>
-                        <li><a href="cart.html">Cart</a></li>
-                        <li><a href="checkout.html">Checkout</a></li>
-                        <li><a href="wishlist.html">wishlist</a></li>
-                        <li><a href="my-account.html">My account</a></li>
-                        <li><a href="login.html">login</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Column3</a>
-                      <ul class="mega_dropdown">
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="blog-sidebar.html">Blog Sidebar</a></li>
-                        <li><a href="blog-details.html">Blog Details</a></li>
-                        <li><a href="about-us.html">About Us </a></li>
-                        <li><a href="contact-us.html">Contact Us </a></li>
-                        <li><a href="404.html">404</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
+                <li><a href="/contact-us">CONTACT </a></li>
               </ul>
             </nav>
           </div>
@@ -154,7 +113,8 @@
                   <!-- <li><a href="#">Logout</a> </li>                    -->
                 </form>
               @else
-                <li> <a href="{{ route('auth.login') }}">Login</a></li>
+                <li> <a href="{{ route('auth.login') }}"><strong>Login</strong></a></li>
+                <li> <a href="{{ route('auth.register') }}"><strong>Register</strong></a></li>
               @endif
             </ul>
           </div>

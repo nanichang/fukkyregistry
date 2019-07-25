@@ -59,52 +59,6 @@
                 </ul>
               </div>
             </div>                                    
-                                                        
-            <div class="sidebar_widget mb-50">
-              <div class="widget_title">
-                <h3>Price</h3>
-              </div>
-              <div class="widget_price">
-                <div class="sidebar-price">
-                  <div id="price-range"></div>
-                  <input type="text" id="price-amount" readonly>
-                </div>
-              </div>
-            </div>                                       
-                                    
-            <div class="sidebar_widget mb-50">
-              <div class="widget_title">
-                <h3>Color</h3>
-              </div>
-              <div class="widget_colord">
-                <ul>
-                  <li><a href="#">Black</a></li>
-                  <li><a href="#">white</a></li>
-                  <li><a href="#">red</a></li>
-                  <li><a href="#">Yellow</a></li>
-                  <li><a href="#">Blue</a></li>
-                  <li><a href="#">Orion Silver</a></li>
-                  <li><a href="#">Gray</a></li>
-                </ul>
-              </div>
-            </div> 
-                                    
-            <div class="sidebar_widget">
-              <div class="widget_title">
-                <h3>Tags</h3>
-              </div>
-              <div class="widget_tags">
-                <ul>
-                  <li><a href="#">bike</a></li>
-                  <li><a href="#">bicycle</a></li>
-                  <li><a href="#">motor</a></li>
-                  <li><a href="#">road bike</a></li>
-                  <li><a href="#">city bike</a></li>
-                  <li><a href="#">cars</a></li>
-                  <li><a href="#">squters</a></li>
-                </ul>
-              </div>
-            </div>                                    
           </div>
         </div>
         

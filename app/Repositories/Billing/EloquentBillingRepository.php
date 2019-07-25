@@ -23,10 +23,12 @@ class EloquentBillingRepository implements BillingContract {
     $billing->note = $request->note;
 
     // $wishlist->slug = preg_replace('/\s+/', '-', $str);
-    
+
     $billing->slug = $product->slug;
     $billing->wishlist()->associate($product);
     // dd($billing);
     $billing->save();
   }
+
+  
 }

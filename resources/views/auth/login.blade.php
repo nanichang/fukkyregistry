@@ -30,6 +30,19 @@
             <div class="login_title">
               <h2>login</h2>
             </div>
+            @if(session('error'))
+              <div class="alert alert-danger alert-dismissable"> 
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                {{ session('error') }}
+              </div>
+            @endif
+
+            @if(session('success'))
+              <div class="alert alert-success alert-dismissable"> 
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                {{ session('success') }}
+              </div>
+            @endif
             <div class="login_form login">
               <form action="{{ route('auth.post.login') }}" method="post">
                 {{ csrf_field() }}
@@ -51,6 +64,9 @@
                 </div>
               </form>
             </div>
+            <p style="text-align: center;">
+              Don't have an account? <a href="{{ route('auth.register') }}">Register here</a>
+            </p>
            </div>    
         </div>
         <!--login area start-->

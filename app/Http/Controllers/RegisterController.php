@@ -28,7 +28,7 @@ class RegisterController extends Controller
       $user = $this->repo->create($request);
       // dd($user);
       if ($user->id) {
-        return redirect()->back()->with('success', 'Please check your email for activation link');
+        return redirect()->route('auth.login')->with('success', 'Account created successfuly, You can now login');
       } 
       else {
         return back()->withInput()->with('error', 'Could not create Your account. Try again!');

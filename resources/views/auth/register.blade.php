@@ -29,29 +29,42 @@
           <div class="login_title">
             <h2>Register</h2>
           </div>
+          @if(session('error'))
+            <div class="alert alert-danger alert-dismissable"> 
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              {{ session('error') }}
+            </div>
+          @endif
+
+          @if(session('success'))
+            <div class="alert alert-success alert-dismissable"> 
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              {{ session('success') }}
+            </div>
+          @endif
           <div class="login_form form_register ">
             <form action="{{ route('auth.post.register') }}" method="post">
               {{ csrf_field() }}
               <div class="login_input">
                 <label>Full Name <span>*</span></label>
-                <input type="text" name="full_name">
+                <input type="text" name="full_name" required>
               </div>
               <div class="login_input">
                 <label>Email address <span>*</span></label>
-                <input type="text" name="email">
+                <input type="text" name="email" required>
               </div>
               <div class="login_input">
                 <label>password <span>*</span></label>
-                <input type="password" name="password">
+                <input type="password" name="password" required>
               </div>
               <div class="login_input">
                 <label> Confirm password <span>*</span></label>
-                <input type="password" name="confirm_password">
+                <input type="password" name="confirm_password" required>
               </div>
 
               <div class="login_input">
                 <label> Account Type <span>*</span></label>
-                <select name="user_type">
+                <select name="user_type" required>
                   <option>Select Account Type</option>
                   <option value="registry">Registry</option>
                   <option value="member">Normal User</option>
@@ -63,6 +76,9 @@
               </div>
             </form>
           </div>
+          <p style="text-align: center;">
+            Already have an account? <a href="{{ route('auth.login') }}">Login here</a>
+          </p>
         </div>
         <div class="col-lg-3 col-md-3">
           
