@@ -20,7 +20,7 @@ class UsersTableSeeder extends Seeder {
       'slug' => 'admin12345',
       'bio_status' => 1,
       'user_type' => 'admin',
-      'sharable_link' => 'http://localhost:8000/shared/my/wishlist'
+      'sharable_link' => env('APP_URL').'/shared/my/wishlist'
     ];
     
     $admin = Sentinel::registerAndActivate($adminCredentials, true);
@@ -37,7 +37,7 @@ class UsersTableSeeder extends Seeder {
       'slug' => 'nani-reg12345',
       'bio_status' => 1,
       'user_type' => 'registry',
-      'sharable_link' => 'http://localhost:8000/shared/my/wishlist'
+      'sharable_link' => env('APP_URL').'/shared/my/wishlist'
     ];
     
     $user = Sentinel::registerAndActivate($userCredentials, true);
@@ -54,7 +54,7 @@ class UsersTableSeeder extends Seeder {
       'slug' => 'nani-user12345',
       'bio_status' => 1,
       'user_type' => 'member',
-      'sharable_link' => 'http://localhost:8000/shared/my/wishlist'
+      'sharable_link' => env('APP_URL').'/shared/my/wishlist'
     ];
     
     $user = Sentinel::registerAndActivate($userCredentials, true);
