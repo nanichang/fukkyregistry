@@ -103,11 +103,11 @@
               @if(Sentinel::check())
                 <li>
                   <a href="{{ route('wishlist.index') }}">
-                    Wishlist
+                    <strong>Wishlist</strong>
                     <span> <i class="zmdi zmdi-favorite-outline"></i> (0) </span>
                   </a>
                 </li>
-                <li> <a href="{{ route('auth.login') }}" onclick="document.getElementById('logout-form').submit()" style="cursor: pointer;">Logout</a></li>
+                <li> <a href="{{ route('auth.login') }}" onclick="document.getElementById('logout-form').submit()" style="cursor: pointer;"><strong>Logout</strong></a></li>
                 <form  action="{{ route('auth.logout') }}" method="post" id="logout-form">
                   {{ csrf_field() }}
                   <!-- <li><a href="#">Logout</a> </li>                    -->
