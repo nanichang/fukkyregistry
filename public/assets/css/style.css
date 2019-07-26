@@ -43,14 +43,14 @@
 
 /*====== 2. Header css here ======*/
 .header_top {
-  background: #0ad2f5 none repeat scroll 0 0;
+  background: #ffff none repeat scroll 0 0;
 }
 header {
-    background: #0ad2f5 none repeat scroll 0 0;
+    background: #ffff none repeat scroll 0 0;
     position: relative;
 }
 .welcome_text p {
-    color: #fff3ee;
+    color: #0ad2f5;
     margin: 0;
     font-weight: 300;
 }
@@ -68,7 +68,7 @@ header {
   padding: 4px 0;
 }
 .header_right_info > ul > li > a {
-  color: #fff3ee;
+  color: #0ad2f5;
 }
 .header_right_info  > ul > li {
     border-right: 1px solid #0ad2f5;
@@ -93,7 +93,7 @@ header {
     position: relative;
 }
 .header_bottom {
-	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	border-top: 1px solid #0ad2f5;
 	position: relative;
 }
 .header_bottom .header_right_info > ul > li > a {
@@ -107,7 +107,7 @@ header {
 }
 /*Header top dropdown css*/
 .header_right_info li ul.sub__menu {
-  background: #ffffff none repeat scroll 0 0;
+  background: #0ad2f5 none repeat scroll 0 0;
   border-radius: 5px;
   left: -20px;
   margin-top: 10px;
@@ -126,7 +126,7 @@ header {
     margin-top: 0;
 } 
 .header_right_info ul.sub__menu li a {
-    border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid #0ad2f5;
     color: #0ad2f5;
     display: block;
     font-weight: 400;
@@ -136,12 +136,12 @@ header {
     border-bottom: none;
 }
 .header_right_info ul.sub__menu li a:hover {
-    color: #8b8989;
+    color: #0ad2f5;
 }
 
 /*category style*/
 .category_search_inner {
-  border: 1px solid #fff3ee;
+  border: 1px solid #0ad2f5;
   border-radius: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,32 +172,32 @@ header {
   width: 100%;
 }
 .category_search .nice-select span.current {
-  color: #fff3ee;
+  color: #0ad2f5;
   font-weight: 300;
 }
 .search input {
-  background: #fff none repeat scroll 0 0;
+  background: #0ad2f5 none repeat scroll 0 0;
   border: medium none;
 }
 .category_search .search input {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   border: medium none;
-  color: #fff3ee;
+  color: #000;
   font-size: 14px;
   font-weight: 300;
   height: 47px;
   padding: 0 40px;
 }
 .search input::-webkit-input-placeholder {
-    color: #fff3ee;
+    color: #0ad2f5;
     opacity: 1;
 }
  .search input:-ms-input-placeholder {
-    color: #fff3ee;
+    color: #000;
      opacity: 1
 }
 .search input::-moz-placeholder {
-    color: #fff3ee;
+    color: #000;
     opacity: 1;
 }
 .category_search_inner .select::before,.category_search_inner .search::before {
@@ -226,7 +226,7 @@ header {
 .category_search .submit button {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   border: medium none;
-  color: #fff3ee;
+  color: #0ad2f5;
   cursor: pointer;
   font-size: 18px;
   height: 48px;
@@ -235,7 +235,7 @@ header {
   width: 60px;
 }
 .category_search .submit button:hover {
-    color: #8b8989;
+    color: #0ad2f5;
 }
 /*mini cart css here*/
 .mini_cart_box_wrapper > a {
@@ -278,7 +278,7 @@ header {
 	margin-left: 0;
 }
 .menu nav >  ul > li > a {
-	color: #f2ede5;
+	color: #0ad2f5;
 	display: block;
 	font-size: 15px;
 	font-weight: 700;
@@ -534,10 +534,11 @@ header {
 .single_banner {
   display: block;
   overflow: hidden;
+  
 }
 .single_banner a {
 	display: block;
-	position: relative;
+  position: relative;
 }
 .single_banner a::before {
   position: absolute;
@@ -603,7 +604,7 @@ header {
     right: 30px;
 }
 .product__desc h3 {
-	color: #a6a6a6;
+	color: #000;
 	font-size: 16px;
 	font-weight: bold;
 	margin-bottom: 0;
@@ -614,7 +615,7 @@ header {
     font-weight: 600;
 }
 .price_amount span.discount_price {
-    background: #8b8989 none repeat scroll 0 0;
+    background: #000 none repeat scroll 0 0;
     color: #ffffff;
     padding: 0 5px;
 }
@@ -998,8 +999,8 @@ footer.footer_area {
     position: relative;
 }
 .widget_title > h3::before,.sidebar_title > h3::before{
-  background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, right top, from(#0ad2f5), to(#ffffff)) repeat scroll 0 0;
-  background: rgba(0, 0, 0, 0) linear-gradient(to right, #0ad2f5 0%, #ffffff 100%) repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, right top, from(#0ad2f5), to(#aaa8a8)) repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, #0ad2f5 0%, #aaa8a8 100%) repeat scroll 0 0;
   bottom: 0;
   content: "";
   height: 2px;
@@ -3380,4 +3381,5 @@ h5.panel-title {
 .error_form a:hover{
     background: #000;
 }
+
 /*error page css end*/
