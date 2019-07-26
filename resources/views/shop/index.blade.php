@@ -110,6 +110,12 @@
           </div>
           <div class="row">
             <div class="col-12">
+            @if(session('success'))
+              <div class="alert alert-success alert-dismissable"> 
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                {{ session('success') }}
+              </div>
+            @endif
               <div class="tab-content">
                 <div class="tab-pane active show fade" id="grid_view" role="tabpanel">
                   <div class="row">

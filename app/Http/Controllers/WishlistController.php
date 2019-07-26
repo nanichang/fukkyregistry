@@ -6,6 +6,7 @@ use App\Repositories\Product\ProductContract;
 use App\Wishlist;
 use Sentinel;
 use App\User;
+use Session;
 
 class WishlistController extends Controller
 {
@@ -46,7 +47,7 @@ class WishlistController extends Controller
 			$wishlist->slug = strtolower($product->slug);
 			$wishlist->save();
 			
-			return redirect()->back();
+			return redirect()->back()->with('success', $product->name.' added to wishlist successfully.');
 		}
 	}
 	

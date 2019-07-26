@@ -16,6 +16,10 @@
     <link href="{{ URL::asset('/assets/css/bundle.css') }}" rel="stylesheet">
     <link href="{{ URL::asset('/assets/css/style.css') }}" rel="stylesheet">
     <link href="{{ URL::asset('/assets/css/responsive.css') }}" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css"> -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
+
     @yield('styles')
     
     <script src="{{ URL::asset('/assets/js/vendor/modernizr-2.8.3.min.js') }}"></script>
@@ -40,6 +44,26 @@
     <script src="{{ URL::asset('/assets/js/bootstrap.min.js') }}"></script>
     <script src="{{ URL::asset('/assets/js/plugins.js') }}"></script>
     <script src="{{ URL::asset('/assets/js/main.js') }}"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script>
+      @if(Session::has('message'))
+        var type = "{{ Session::get('alert-type', 'info') }}";
+        switch(type){
+          case 'info':
+            toastr.info("{{ Session::get('message') }}");
+            break;
+          case 'warning':
+            toastr.warning("{{ Session::get('message') }}");
+            break;
+          case 'success':
+            toastr.success("{{ Session::get('message') }}");
+            break;
+          case 'error':
+            toastr.error("{{ Session::get('message') }}");
+          break;
+        }
+      @endif
+    </script>
     @yield('scripts')
   </body>
 </html>

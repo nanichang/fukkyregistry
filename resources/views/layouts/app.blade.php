@@ -19,6 +19,7 @@
   <link href="{{ URL::asset('/assets/admin/extra-libs/c3/c3.min.css') }}" rel="stylesheet">
   <link href="{{ URL::asset('/assets/admin/dist/css/style.min.css') }}" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+          <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
   @yield('styles')
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
