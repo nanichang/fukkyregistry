@@ -93,7 +93,8 @@ header {
     position: relative;
 }
 .header_bottom {
-	border-top: 1px solid #0ad2f5;
+  border-top: 1px solid #0ad2f5;
+  border-bottom: 1px solid #0ad2f5;
 	position: relative;
 }
 .header_bottom .header_right_info > ul > li > a {
@@ -239,7 +240,7 @@ header {
 }
 /*mini cart css here*/
 .mini_cart_box_wrapper > a {
-  border: 1px solid #fff3ee;
+  border: 1px solid #0ad2f5;
   border-radius: 50px;
   display: inline-block;
   height: 50px;
@@ -251,7 +252,7 @@ header {
 }
 .mini_cart_box_wrapper > a span.cart_count {
   background: #fff none repeat scroll 0 0;
-  border: 1px solid #fff3ee;
+  border: 1px solid #0ad2f5;
   border-radius: 50%;
   color: #0ad2f5;
   font-size: 16px;
@@ -278,7 +279,9 @@ header {
 	margin-left: 0;
 }
 .menu nav >  ul > li > a {
-	color: #0ad2f5;
+  color: #0ad2f5;
+  border: 1px;
+  border-block-end: #0ad2f5;
 	display: block;
 	font-size: 15px;
 	font-weight: 700;
@@ -288,10 +291,13 @@ header {
 }
 .menu nav > ul > li {
 	margin-right: 32px;
-	position: relative;
+  position: relative;
+  border: 1px;
+  border-block-end: #0ad2f5;
 }
 .menu ul li:last-child {
     margin-right: 0;
+    border: 1px;
 }
 .menu nav > ul > li:hover > a {
 	color: #8b8989;
@@ -993,7 +999,7 @@ footer.footer_area {
 .widget_title > h3,.sidebar_title > h3 {
     color: #fff;
     display: inline-block;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 700;
     padding-bottom: 17px;
     position: relative;
@@ -2060,7 +2066,7 @@ blockquote {
     padding-left: 15px;
 }
 .submit_button_inner > button,.contact-form-inner .contact-btn > button {
-  background: #f6563c none repeat scroll 0 0;
+  background: #0ad2f5 none repeat scroll 0 0;
   border: medium none;
   border-radius: 35px;
   color: #ffffff;
@@ -2425,7 +2431,7 @@ blockquote {
 }
 .contact-form-inner .contact-box > input {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border: 1px solid #f5f5f5;
+    border: 1px solid #0ad2f5;
     border-radius: 8px;
     color: #151320;
     font-weight: 600;
@@ -2446,7 +2452,7 @@ blockquote {
 }
 .contact-box.message textarea {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border: 1px solid #f5f5f5;
+    border: 1px solid #0ad2f5;
     border-radius: 10px;
     color: #151320;
     height: 170px;
