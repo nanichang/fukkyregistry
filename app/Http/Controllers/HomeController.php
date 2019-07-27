@@ -18,4 +18,12 @@ class HomeController extends Controller {
     return view('pages.index')->with('products', $products);
   }
 
+  public function aboutUs() {
+    return view('pages.aboutus');
+  }
+
+  public function contactUs() {
+    return view('pages.contactus');
+  }
+
 }

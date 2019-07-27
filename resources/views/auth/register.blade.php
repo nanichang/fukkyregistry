@@ -48,7 +48,7 @@
             <form action="{{ route('auth.post.register') }}" method="post">
               {{ csrf_field() }}
               <div class="login_input">
-                <label>Full Name <span>*</span></label>
+                <label>Couple's Firstnames <span>*</span></label>
                 <input type="text" name="full_name" required>
               </div>
               <div class="login_input">

@@ -1,4 +1,4 @@
-<header>
+<header id="Cloud">
   <div class="header_middle">
     <div class="container">
       <div class="row align-items-center">
@@ -90,9 +90,9 @@
             <nav>
               <ul>                                                  
                 <li><a href="/">HOME</a></li>
-                <li><a href="/about">About</a></li>
+                <li><a href="{{ route('home.aboutUs') }}">About</a></li>
                 <li><a href="{{ route('shop.index') }}">Shop</a></li>
-                <li><a href="/contact-us">CONTACT </a></li>
+                <li><a href="{{ route('home.contactUs') }}">CONTACT </a></li>
               </ul>
             </nav>
           </div>

@@ -68,7 +68,7 @@ class LoginController extends Controller {
     } catch(NotActivatedException $e){
       return redirect()->back()->with(['error' => 'Ops... Your account is not yet activated, please check your email for activation code or link']);
     }
-}
+  }
 
   public function logout() {
     Sentinel::logout(null, true);

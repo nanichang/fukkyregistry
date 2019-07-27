@@ -12,6 +12,10 @@
 */
 
 Route::get('/', 'HomeController@index')->name('home.index');
+Route::get('/about-us', 'HomeController@aboutUs')->name('home.aboutUs');
+Route::get('/contact-us', 'HomeController@contactUs')->name('home.contactUs');
+
+
 
 Route::group(['prefix' => 'auth'], function() {
   Route::get('/login', 'LoginController@getLogin')->name('auth.login');

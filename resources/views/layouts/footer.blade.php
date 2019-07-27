@@ -1,63 +1,17 @@
 <footer class="footer_area">
-  <div class="footer_top">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="our_help_services ptb-80">
-            <div class="row">
-              <div class="col-lg-4 col-md-6 col-12">
-                <div class="help_service d-flex">
-                  <div class="h_ser_icon">
-                    <i class="zmdi zmdi-boat"></i>
-                  </div>
-                  <div class="h_ser_text">
-                    <h3>Free Shipping</h3>
-                    <p>Free Shipping on Bangladesh</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-12">
-                <div class="help_service d-flex justify-content-center">
-                  <div class="h_ser_icon">
-                    <i class="zmdi zmdi-shield-security"></i>
-                  </div>
-                  <div class="h_ser_text">
-                    <h3>Money Guarentee</h3>
-                    <p>Free Shipping on Bangladesh</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-12">
-                <div class="help_service d-flex justify-content-end">
-                  <div class="h_ser_icon">
-                    <i class="zmdi zmdi-phone-setting"></i>
-                  </div>
-                  <div class="h_ser_text">
-                    <h3>Online Support</h3>
-                    <p>Free Shipping on Bangladesh</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="footer_bottom ptb-80">
     <div class="container">
       <div class="row">
         <div class="col-lg-3 col-md-6">
           <div class="single_footer widget_description">
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
             <div class="addresses_inner">
               <div class="single_address">
                 <p>
-                  <span> Address: </span> <span>13/M Matador road, South <br> Road USA- 2155</span>
+                  <span> Address: </span> <span>3rd Floor, Taen Shopping complex <br> Old airport road, Opp Nitel office</span>
                 </p> 
 
                 <p>
-                  <span> Phone: </span> <span>+12  2223 2223 22 <br>  +125 5455 5555 55</span>
+                  <span> Phone: </span> <span>+234 8056 2519 23</span>
                 </p>
               </div>
             </div>
