@@ -18,8 +18,9 @@
     <link href="{{ URL::asset('/assets/css/responsive.css') }}" rel="stylesheet">
     <!-- <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css"> -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
-<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
 
+    <link href="{{ URL::asset('/assets/css/cloud.css') }}" rel="stylesheet">
     @yield('styles')
     
     <script src="{{ URL::asset('/assets/js/vendor/modernizr-2.8.3.min.js') }}"></script>

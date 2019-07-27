@@ -11,7 +11,7 @@
           <div class="category_search">
             <form action="#">
               <div class="category_search_inner">
-                <div class="select">
+                <!-- <div class="select">
                   <select name="categroy_search">
                     <option value="1" selected>All Categories</option>
                     <option value="2" >Latest Bikes</option>
@@ -19,7 +19,7 @@
                     <option value="4" >popular Bike</option>
                     <option value="5" >Best Selling Bike</option>
                   </select>
-                </div>
+                </div> -->
                 <div class="search">
                   <input type="text" placeholder="Search Keyword Here">
                 </div>

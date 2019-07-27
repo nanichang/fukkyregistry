@@ -13,10 +13,10 @@
           <div class="row align-items-center">
             <div class="col-lg-6 col-md-6">
               <div class="slider-content slider-text-animation">
-                <h1>Best Deal</h1>
+                <h1>The Easiest Registry</h1>
                 <h2>15% - 20% Off</h2>
-                <p>Simply dummy text of the printing and typesetting. </p>
-                <a href="{{ route('auth.register') }}">Make a Wish</a>
+                <p>Everything You Need In One Place. </p>
+                <a href="{{ route('auth.register') }}">BUILD YOUR REGISTRY</a>
               </div>
             </div>
             <div class="col-lg-6 col-md-6">
@@ -34,10 +34,10 @@
           <div class="row align-items-center">
             <div class="col-lg-6 col-md-6">
               <div class="slider-content slider-text-animation">
-                <h1>Best Deal</h1>
-                <h2>15% - 20% Off</h2>
-                <p>Simply dummy text of the printing and typesetting. </p>
-                <a href="{{ route('auth.register') }}">Make a Wish</a>
+                <h1>Save the Date</h1>
+                <!-- <h2>15% - 20% Off</h2> -->
+                <p>Shop All Save the Dates. </p>
+                <a href="{{ route('auth.register') }}">BUILD YOUR REGISTRY</a>
               </div>
             </div>
             <div class="col-lg-6 col-md-6">
@@ -55,10 +55,10 @@
           <div class="row align-items-center">
             <div class="col-lg-6 col-md-6">
               <div class="slider-content slider-text-animation">
-                <h1>Best Deal</h1>
-                <h2>15% - 20% Off</h2>
-                <p>Simply dummy text of the printing and typesetting. </p>
-                <a href="{{ route('auth.register') }}">Make a Wish</a>
+                <h1>Shop All</h1>
+                <h2>Free Checklist</h2>
+                <p>Free Guest List Manager. </p>
+                <a href="{{ route('auth.register') }}">BUILD YOUR REGISTRY</a>
               </div>
             </div>
             <div class="col-lg-6 col-md-6">

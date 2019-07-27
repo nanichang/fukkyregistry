@@ -27,7 +27,7 @@
         </div>
         <div class="col-lg-6 col-md-6">
           <div class="login_title">
-            <h2>Register</h2>
+            <h2>BUILD YOUR REGISTRY</h2>
           </div>
           @if(session('error'))
             <div class="alert alert-danger alert-dismissable"> 
@@ -43,6 +43,8 @@
             </div>
           @endif
           <div class="login_form form_register ">
+            <div class="Cloud Foreground"></div>
+            <div class="Cloud Background"></div>
             <form action="{{ route('auth.post.register') }}" method="post">
               {{ csrf_field() }}
               <div class="login_input">
@@ -62,7 +64,7 @@
                 <input type="password" name="confirm_password" required>
               </div>
 
-              <div class="login_input">
+              <div hidden class="login_input">
                 <label> Account Type <span>*</span></label>
                 <select name="user_type" required>
                   <option>Select Account Type</option>
@@ -72,7 +74,7 @@
               </div>
 
               <div class="login_submit">
-                <button type="submit">Register</button>
+                <button type="submit">Continue</button>
               </div>
             </form>
           </div>
