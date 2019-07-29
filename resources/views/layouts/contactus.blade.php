@@ -41,7 +41,7 @@
                                     <i class="zmdi zmdi-email"></i>
                                 </div>
                                 <div class="conatct-desc">
-                                    <p>info@fukkis.com</p>
+                                    <p>info@fukkisregistry.com</p>
                                 </div>
                             </div>
                         </div>

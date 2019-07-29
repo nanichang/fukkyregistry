@@ -15,11 +15,10 @@ Route::get('/', 'HomeController@index')->name('home.index');
 Route::get('/about-us', 'HomeController@aboutUs')->name('home.aboutUs');
 Route::get('/contact-us', 'HomeController@contactUs')->name('home.contactUs');
 
-
-
 Route::group(['prefix' => 'auth'], function() {
   Route::get('/login', 'LoginController@getLogin')->name('auth.login');
   Route::post('/login', 'LoginController@post')->name('auth.post.login');
+
   Route::get('/register', 'RegisterController@register')->name('auth.register');
   Route::post('/register', 'RegisterController@store')->name('auth.post.register');
   Route::post('/logout', 'LoginController@logout')->name('auth.logout');

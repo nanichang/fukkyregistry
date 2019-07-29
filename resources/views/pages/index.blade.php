@@ -8,7 +8,7 @@
   <div class="slider_wrapper">
     <div class="slider-active owl-carousel">
       <!--Single Slide-->
-      <div class="single__slider bg-opacity" style="background-image:url(assets/img/slide/1.jpg); background-repeat: no-repeat; background-size: cover;">
+      <div class="single__slider bg-opacity Could" style="background-image:url(assets/img/slide/1.jpg); background-repeat: no-repeat; background-size: cover;">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6 col-md-6">

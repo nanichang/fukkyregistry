@@ -1,6 +1,7 @@
-@extends('layouts.master')
+@extends ('layouts.master')
 
 @section('content')
+<div class=" bg-gray mt-110 mb-105">
   <div class="breadcrumb_section">
     <div class="container">
       <div class="row">
@@ -17,7 +18,9 @@
     </div>
   </div>
 
+    
   <!-- accont area start -->
+  
   <div class="account_area ptb-100">
     <div class="container">
       <div class="row">
@@ -42,9 +45,8 @@
               {{ session('success') }}
             </div>
           @endif
+
           <div class="login_form form_register ">
-            <div class="Cloud Foreground"></div>
-            <div class="Cloud Background"></div>
             <form action="{{ route('auth.post.register') }}" method="post">
               {{ csrf_field() }}
               <div class="login_input">
@@ -89,9 +91,9 @@
       </div>
     </div>
   </div>
-  <!-- accont area end -->
+    <!-- accont area end -->
 
-  <!--Newsletter section start-->
+    <!--Newsletter section start-->
   <div class="newsletter_section ptb-100">
     <div class="container">
       <div class="row align-items-center">
@@ -112,5 +114,7 @@
       </div>
     </div>
   </div>
+</div>
+  
   <!--Newsletter section end -->
 @endsection

@@ -3181,7 +3181,7 @@ h5.panel-title {
 	max-width: 100%;
 	padding: 0 20px;
 	background: none;
-  border-radius: 30px;
+  border-radius: 8px;
   color: #0ad2f5;
 }
 .login_input {
