@@ -78,23 +78,41 @@
   </div>
   
   <br/>
-  <div class="latest_post pb-70">
+  
+ <!--About us start-->
+<div class="about-us bg-gray mt-110 mb-105">
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <div class="section_title">
-                    <h2>How Fukky Registry Works - It's Easy!</h2>
+            <div class="col-lg-6">
+                <div class="about-description">
+                    <div class="about-content">
+                        <h3>about us</h3>
+                        <div class="about-read">
+                            <p class="text-1">
+                                Lorem ipsum dolor sit amet, consectetur adipissed do eiusmod tempor incididunt
+                            </p>
+                            <p class="text-2">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisthe nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conseqenim ipsam voluptatem quia volupta
+                            </p>
+                            <p class="text-3">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tdidunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row mt-60">
-            <div class="col-md-6">
-                Step 1
-            </div>
-            <div class="col-md-6">
-                Video
+    </div>
+    <div class="about-fun-fact">
+        <div class="about-fun-fact-inner white-overlay">
+            <div class="fun-factor">
+                <div class="row">
+
+                </div>
             </div>
         </div>
     </div>
 </div>
+<!--About us end-->
+  
 @endsection
