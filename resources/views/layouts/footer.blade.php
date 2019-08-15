@@ -1,4 +1,4 @@
-<footer class="footer_area">
+<footer class="footer_area" style="background-color: #151320">
   <div class="footer_top">
     <div class="container">
         <div class="row">
@@ -72,9 +72,7 @@
                 <li>
                   <a class="twitter" href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
                 </li>
-                <li>
-                  <a class="linkedin" href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-                </li>
+               
               </ul>
             </div>
           </div>
@@ -92,12 +90,12 @@
       </div>
     </div>
   </div>
-  <div class="copyright">
+  <div class="copyright" style="background-color: #000000">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <div class="copyright_inner text-center">
-            <p style="color: #000000;"> <strong>Copyright &copy; 
+            <p style=""> <strong>Copyright &copy; 
               <?php 
                 $startYear = 2019; 
                 $currentYear = date('Y');
