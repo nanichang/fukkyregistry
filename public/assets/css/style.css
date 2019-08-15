@@ -94,7 +94,7 @@ header {
 }
 .header_bottom {
   border-top: 1px solid #0ad2f5;
-  border-bottom: 1px solid #0ad2f5;
+  /*border-bottom: 1px solid #0ad2f5;*/
 	position: relative;
 }
 .header_bottom .header_right_info > ul > li > a {
@@ -881,10 +881,10 @@ header {
 } */
 /*--- 11. Footer css here ------*/
 footer.footer_area {
-    background: #0ad2f5 none repeat scroll 0 0;
+    background: #000000 none repeat scroll 0 0;
 }
 .copyright {
-    background: #0ad2f5 none repeat scroll 0 0;
+    background: #ffffff none repeat scroll 0 0;
     text-align: center;
 }
 .footer_bottom.ptb-80 {
