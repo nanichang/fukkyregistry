@@ -1,4 +1,49 @@
 <footer class="footer_area">
+  <div class="footer_top">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="our_help_services ptb-80">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="help_service d-flex">
+                                <div class="h_ser_icon">
+                                    <i class="zmdi zmdi-boat"></i>
+                                </div>
+                                <div class="h_ser_text">
+                                    <h3>Free Shipping</h3>
+                                    <p>Free Shipping within Jos</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="help_service d-flex justify-content-center">
+                                <div class="h_ser_icon">
+                                    <i class="zmdi zmdi-shield-security"></i>
+                                </div>
+                                <div class="h_ser_text">
+                                    <h3>Money Guarentee</h3>
+                                    <p>Free Shipping on us</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="help_service d-flex justify-content-end">
+                                <div class="h_ser_icon">
+                                    <i class="zmdi zmdi-phone-setting"></i>
+                                </div>
+                                <div class="h_ser_text">
+                                    <h3>Quick Support</h3>
+                                    <p>Call us on 08161730129</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
   <div class="footer_bottom ptb-80">
     <div class="container">
       <div class="row">
