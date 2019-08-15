@@ -77,13 +77,13 @@
     </div>
   </div>
   
-  
+  <br/>
   <div class="latest_post pb-70">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="section_title">
-                    <h2>Latest News</h2>
+                    <h2>How Fukky Registry Works - It's Easy!</h2>
                 </div>
             </div>
         </div>
