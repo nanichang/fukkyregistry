@@ -15,7 +15,7 @@
               <div class="slider-content slider-text-animation">
                 <h1>Wedding gifts convenient for you and your wedding guests</h1>
                 <h2>Wedding Gifts</h2>
-                <p>Everything You Need In One Place. </p>
+                <p>Let your wishes be fulfilled</p>
                 <a href="{{ route('auth.register') }}">BUILD YOUR REGISTRY</a>
               </div>
             </div>
