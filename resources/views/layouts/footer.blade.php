@@ -52,13 +52,13 @@
       <div class="row">
         <div class="col-12">
           <div class="copyright_inner text-center">
-            <p style="color: #000000;">Copyright &copy; 
+            <p style="color: #000000;"> <strong>Copyright &copy; 
               <?php 
                 $startYear = 2019; 
                 $currentYear = date('Y');
                 echo $startYear . (($startYear != $currentYear) ? ' - ' . $currentYear : '');
               ?>
-             All Right Reserved </p>
+             All Right Reserved </strong></p>
           </div>
         </div>
       </div>
