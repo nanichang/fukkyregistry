@@ -54,47 +54,6 @@
                 </div>
             </div>
         </div>
-
-        <!--Conatct form start-->
-        <div class="row">
-            <div class="col-lg-10 offset-lg-1 col-md-12">
-                <div class="contact-form-inner pt-95">
-                    <div class="contact-form-titile text-center">
-                        <h3>Send Us a Message</h3>    
-                    </div>
-                    <div class="contat_form_inner mt-60">
-                        <form id="contact-form" action="assets/mail.php" method="POST">
-                            <div class="single-contact-form d-flex">
-                                <div class="contact-box">
-                                    <input type="text" placeholder="Your Name *" name="name">
-                                </div>
-                                <div class="contact-box">
-                                    <input type="text" placeholder="Phone *" name="phone">
-                                </div>
-                            </div>
-                            <div class="single-contact-form">
-                                <div class="contact-box subject">
-                                    <input type="email" placeholder="Email*" name="email">
-                                </div>
-                            </div>
-                            <div class="single-contact-form">
-                                <div class="contact-box message">
-                                    <textarea name="message" placeholder="Message*"></textarea>
-                                </div>
-                            </div>
-                            <div class="contact-btn">
-                                <button type="submit">Send Message</button>
-                            </div>
-
-                            <p class="form-messege"></p>
-
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!--Conatct form end-->
     </div>
 </div>
 <!--Contact us end-->
