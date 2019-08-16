@@ -86,7 +86,7 @@
             <div class="col-lg-6">
                 <div class="about-description">
                     <div class="about-content">
-                        <h3>about us</h3>
+                        <h3>HOW IT WORKS</h3>
                         <div class="about-read">
                             <p class="text-1">
                                 Lorem ipsum dolor sit amet, consectetur adipissed do eiusmod tempor incididunt
@@ -104,7 +104,7 @@
         </div>
     </div>
     <div class="about-fun-fact">
-        <div class="about-fun-fact-inner white-overlay">
+        <div class="about-fun-fact-inner">
             <div class="fun-factor">
                 <div class="row">
 
