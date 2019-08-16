@@ -84,8 +84,8 @@
 
 .progressContainer {
   position: relative;
-  width: 300px;
-  height: 100vh;
+  width: auto;
+  height: auto;
   margin: 0 auto;
   overflow: hidden;
   padding: 2rem;
