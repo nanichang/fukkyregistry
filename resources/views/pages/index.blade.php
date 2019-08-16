@@ -79,6 +79,90 @@
   
   <br/>
   
+  <style>
+  
+
+.progressContainer {
+  position: relative;
+  width: 300px;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 2rem;
+  color: #fff;
+  background: #392A60;
+  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.progress {
+  position: relative;
+  padding: 0 1rem 0 3.5rem;
+  margin: 2rem 0 0;
+  list-style: none;
+}
+
+.progress__item {
+  position: relative;
+  min-height: 75px;
+  counter-increment: list;
+  padding-left: 0.5rem;
+}
+.progress__item:before {
+  content: "";
+  position: absolute;
+  left: -1.5rem;
+  top: 33px;
+  height: 60%;
+  width: 1px;
+  border-left: 1px solid #fff;
+}
+.progress__item:after {
+  content: counter(list);
+  position: absolute;
+  top: 0;
+  left: -2.5rem;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: transparent;
+  color: #fff;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 2rem;
+  text-align: center;
+  border: 1px solid #fff;
+}
+.progress__item:last-child:before {
+  border: none;
+}
+.progress__item.progress__item--completed {
+  opacity: 0.6;
+  color: #fff;
+}
+.progress__item.progress__item--completed:after {
+  content: "\2713";
+  font-weight: 400;
+  background: #fff;
+  color: #392A60;
+}
+.progress__item.progress__item--active:after {
+  background: #fff;
+  color: #392A60;
+}
+
+.progress__title {
+  padding: 0.4rem 0 0.5rem;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.progress__info {
+  font-size: 13px;
+}
+  
+  </style>
  <!--About us start-->
 <div class="about-us bg-gray mt-110 mb-105">
     <div class="container">
@@ -87,16 +171,25 @@
                 <div class="about-description">
                     <div class="about-content">
                         <h3>HOW IT WORKS</h3>
-                        <div class="about-read">
-                            <p class="text-1">
-                                Lorem ipsum dolor sit amet, consectetur adipissed do eiusmod tempor incididunt
-                            </p>
-                            <p class="text-2">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisthe nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conseqenim ipsam voluptatem quia volupta
-                            </p>
-                            <p class="text-3">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tdidunt ut labore et dolore magna aliqua.
-                            </p>
+                        <div class="progressContainer">
+                          <ul class="progress">
+                            <li class="progress__item progress__item--completed">
+                              <p class="progress__title">Step 1</p>
+                              <p class="progress__info">Register</p>
+                            </li>
+                            <li class="progress__item progress__item--active">
+                              <p class="progress__title">Step 2</p>
+                              <p class="progress__info">Create a wishlist</p>
+                            </li>
+                            <li class="progress__item">
+                              <p class="progress__title">Step 3</p>
+                              <p class="progress__info">Share your wishlist link to your friends</p>
+                            </li>
+                             <li class="progress__item">
+                              <p class="progress__title">Step 3</p>
+                              <p class="progress__info">Your wedding gifts will be presented on your wedding day</p>
+                            </li>
+                          </ul>
                         </div>
                     </div>
                 </div>
